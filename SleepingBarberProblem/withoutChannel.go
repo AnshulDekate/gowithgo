@@ -87,7 +87,7 @@ func main() {
 	var mu1 sync.Mutex
 	var mu2 sync.Mutex
 
-	barber := Barber{mu1, "sleeping", 0}
+	barber := Barber{mu1, "sleeping"}
 	// 10 queries
 
 	waitingRoom := WaitingRoom{mu2, 0, 5}
